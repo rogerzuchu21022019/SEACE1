@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splashFM">
+    <fragment
+        android:id="@+id/splashFM"
+        android:name="com.example.asm.fragment.SplashFM"
+        android:label="SplashFM"
+        tools:layout="@layout/fragment_splash">
+        <action
+            android:id="@+id/action_splashFM_to_containerFM"
+            app:destination="@id/containerFM" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFM"
+        android:name="com.example.asm.fragment.fmLogin.LoginFM"
+        android:label="LoginFM"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_loginFM_to_registerFM"
+            app:destination="@id/registerFM" />
+        <action
+            android:id="@+id/action_loginFM_to_forgotFM"
+            app:destination="@id/forgotFM" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerFM"
+        android:name="com.example.asm.fragment.fmLogin.RegisterFM"
+        android:label="LoginFM"
+        tools:layout="@layout/fragment_register">
+        <action
+            android:id="@+id/action_registerFM_to_loginFM"
+            app:destination="@id/loginFM" />
+    </fragment>
+    <fragment
+        android:id="@+id/forgotFM"
+        android:name="com.example.asm.fragment.fmLogin.ForgetPasswordFM"
+        android:label="LoginFM"
+        tools:layout="@layout/fragment_forget_password">
+        <action
+            android:id="@+id/action_registerFM_to_loginFM"
+            app:destination="@id/loginFM" />
+    </fragment>
+    <fragment
+        android:id="@+id/containerFM"
+        android:name="com.example.asm.fragment.ContainerFM"
+        android:label="ContainerFM"
+        tools:layout="@layout/fragment_container">
+        <action
+            android:id="@+id/action_containerFM_to_loginFM"
+            app:destination="@id/loginFM" />
+    </fragment>
+
+</navigation>

@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">ASM FINAL</string>
+    <string name="Next">Next</string>
+    <string name="click2">Click2</string>
+    <string name="click3">Click3</string>
+    <string name="email">vunam290896@gmail.com</string>
+    <string name="product1">Product1</string>
+    <string name="todo">TODO</string>
+    <string name="login">Login</string>
+    <string name="forget">Forget</string>
+    <string name="register">Register</string>
+    <string name="press_password">Press Your Password</string>
+    <string name="helper_text">Require*</string>
+    <string name="press_id">Press Your Student Code</string>
+    <string name="quan_ly_sinh_vien">Student Management</string>
+    <string name="quan_ly">Management</string>
+    <string name="add_sinh_vien">Add Student</string>
+    <string name="quan_ly_lop_hoc">Classroom Managenement</string>
+    <string name="stt">STT</string>
+    <string name="class_name">Class Name</string>
+    <string name="lorem"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta dolor dolores ducimus ea earum fugiat fugit laboriosam magni nemo, nihil odit quibusdam quos reprehenderit saepe, totam ullam unde veniam voluptatum! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta dolor dolores ducimus ea earum fugiat fugit laboriosam magni nemo, nihil odit quibusdam quos reprehenderit saepe, totam ullam unde veniam voluptatum! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta dolor dolores ducimus ea earum fugiat fugit laboriosam magni nemo, nihil odit quibusdam quos reprehenderit saepe, totam ullam unde veniam voluptatum! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta dolor dolores ducimus ea earum fugiat fugit laboriosam magni nemo, nihil odit quibusdam quos reprehenderit saepe, totam ullam unde veniam voluptatum! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta dolor dolores ducimus ea earum fugiat fugit laboriosam magni nemo, nihil odit quibusdam quos reprehenderit saepe, totam ullam unde veniam voluptatum! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta dolor dolores ducimus ea earum fugiat fugit laboriosam magni nemo, nihil odit quibusdam quos reprehenderit saepe, totam ullam unde veniam voluptatum! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta dolor dolores ducimus ea earum fugiat fugit laboriosam magni nemo, nihil odit quibusdam quos reprehenderit saepe, totam ullam unde veniam voluptatum! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta dolor dolores ducimus ea earum fugiat fugit laboriosam magni nemo, nihil odit quibusdam quos reprehenderit saepe, totam ullam unde veniam voluptatum! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta dolor dolores ducimus ea earum fugiat fugit laboriosam magni nemo, nihil odit quibusdam quos reprehenderit saepe, totam ullam unde veniam voluptatum! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta dolor dolores ducimus ea earum fugiat fugit laboriosam magni nemo, nihil odit quibusdam quos reprehenderit saepe, totam ullam unde veniam voluptatum! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta dolor dolores ducimus ea earum fugiat fugit laboriosam magni nemo, nihil odit quibusdam quos reprehenderit saepe, totam ullam unde veniam voluptatum! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta dolor dolores ducimus ea earum fugiat fugit laboriosam magni nemo, nihil odit quibusdam quos reprehenderit saepe, totam ullam unde veniam voluptatum! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta dolor dolores ducimus ea earum fugiat fugit laboriosam magni nemo, nihil odit quibusdam quos reprehenderit saepe, totam ullam unde veniam voluptatum! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta dolor dolores ducimus ea earum fugiat fugit laboriosam magni nemo, nihil odit quibusdam quos reprehenderit saepe, totam ullam unde veniam voluptatum! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta dolor dolores ducimus ea earum fugiat fugit laboriosam magni nemo, nihil odit quibusdam quos reprehenderit saepe, totam ullam unde veniam voluptatum! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta dolor dolores ducimus ea earum fugiat fugit laboriosam magni nemo, nihil odit quibusdam quos reprehenderit saepe, totam ullam unde veniam voluptatum! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta dolor dolores ducimus ea earum fugiat fugit laboriosam magni nemo, nihil odit quibusdam quos reprehenderit saepe, totam ullam unde veniam voluptatum! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta dolor dolores ducimus ea earum fugiat fugit laboriosam magni nemo, nihil odit quibusdam quos reprehenderit saepe, totam ullam unde veniam voluptatum! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta dolor dolores ducimus ea earum fugiat fugit laboriosam magni nemo, nihil odit quibusdam quos reprehenderit saepe, totam ullam unde veniam voluptatum! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta dolor dolores ducimus ea earum fugiat fugit laboriosam magni nemo, nihil odit quibusdam quos reprehenderit saepe, totam ullam unde veniam voluptatum! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta dolor dolores ducimus ea earum fugiat fugit laboriosam magni nemo, nihil odit quibusdam quos reprehenderit saepe, totam ullam unde veniam voluptatum! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta dolor dolores ducimus ea earum fugiat fugit laboriosam magni nemo, nihil odit quibusdam quos reprehenderit saepe, totam ullam unde veniam voluptatum! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta dolor dolores ducimus ea earum fugiat fugit laboriosam magni nemo, nihil odit quibusdam quos reprehenderit saepe, totam ullam unde veniam voluptatum! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta dolor dolores ducimus ea earum fugiat fugit laboriosam magni nemo, nihil odit quibusdam quos reprehenderit saepe, totam ullam unde veniam voluptatum!  </string>
+    <string name="lorem_slogan"> Lorem ipsum dolor sit amet</string>
+    <string name="lorem1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam assumenda </string>
+    <string name="todo1">TODO</string>
+    <string name="ok">ok</string>
+    <string name="cancel">cancel</string>
+    <string name="update">UpDate</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="get_s_started">Get\'s Started</string>
+    <string name="press_information_for_classroom_managament_first">Press Information for Classroom Managament First</string>
+    <string-array name="spiner">
+        <item>one</item>
+        <item>two</item>
+        <item>three</item>
+        <item>four</item>
+    </string-array>
+</resources>

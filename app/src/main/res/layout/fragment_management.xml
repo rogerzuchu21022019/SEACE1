@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activities.MainActivity">
+
+        <TextView
+            android:id="@+id/tvStudentManagement"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/quan_ly"
+            android:textColor="@color/primary"
+            android:textSize="@dimen/_20sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0"
+            tools:ignore="MissingConstraints" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            app:layout_constraintTop_toBottomOf="@id/tvStudentManagement"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/lavManagement"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_300sdp"
+            app:lottie_rawRes="@raw/all_problem"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            tools:ignore="MissingConstraints" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/acbStudentManager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/quan_ly_sinh_vien"
+            android:textSize="@dimen/_18sdp"
+            android:background="@color/white"
+            android:textColor="@color/second"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/lavManagement"
+            tools:ignore="MissingConstraints" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:background="@color/white"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:id="@+id/acbClassRoomManager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/quan_ly_lop_hoc"
+            android:textSize="@dimen/_18sdp"
+            android:textColor="@color/second"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/acbStudentManager"
+            tools:ignore="MissingConstraints" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

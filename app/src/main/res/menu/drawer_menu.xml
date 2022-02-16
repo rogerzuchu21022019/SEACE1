@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/managementFM"
+            android:icon="@drawable/management"
+            android:title="Management" />
+        <item
+            android:id="@+id/classroomManagerFM"
+            android:icon="@drawable/classroom"
+            android:title="ClassRoom Management" />
+        <item
+            android:id="@+id/studentManagerFM"
+            android:icon="@drawable/student"
+            android:title="Student Management" />
+
+        <item
+            android:id="@+id/drawerInstruction"
+            android:icon="@drawable/instruction1"
+            android:title="Instruction" />
+        <item
+            android:id="@+id/drawerProFile"
+            android:icon="@drawable/profile"
+            android:title="Profile FM" />
+
+        <item
+            android:id="@+id/drawerLogout"
+            android:icon="@drawable/logout"
+            android:title="Log out" />
+    </group>
+</menu>

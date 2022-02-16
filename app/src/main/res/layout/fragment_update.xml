@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="java.util.List" />
+
+        <variable
+            name="classroom"
+            type="com.example.asm.database.entities.ClassRoom" />
+
+        <variable
+            name="students"
+            type="com.example.asm.database.entities.Students" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lavView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_180sdp"
+            app:layout_constraintTop_toBottomOf="@id/acbDate"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/update"
+            tools:ignore="MissingConstraints" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilFullName"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            app:boxBackgroundMode="outline"
+            app:counterEnabled="true"
+            app:counterMaxLength="50"
+            app:endIconMode="clear_text"
+            app:helperText="@string/helper_text"
+            app:helperTextEnabled="true"
+            app:helperTextTextColor="@color/red"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.09"
+            app:passwordToggleTint="@color/white"
+            tools:ignore="MissingConstraints">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tieFullName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hapticFeedbackEnabled="true"
+                android:hint="Nhap FullName"
+                android:inputType="textAutoCorrect"
+                android:textColor="@color/primary"
+                android:textColorHint="@color/red"
+                android:textSize="16sp"
+                app:textInputLayoutFocusedRectEnabled="true" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilID"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            app:boxBackgroundMode="outline"
+            app:counterEnabled="true"
+            app:counterMaxLength="50"
+            app:endIconMode="clear_text"
+            app:helperText="@string/helper_text"
+            app:helperTextEnabled="true"
+            app:helperTextTextColor="@color/red"
+            app:layout_constraintTop_toBottomOf="@id/tilFullName"
+            app:passwordToggleTint="@color/white"
+            tools:ignore="MissingConstraints">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tieID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hapticFeedbackEnabled="true"
+                android:hint="Nhap MSSV"
+                android:textColor="@color/primary"
+                android:textColorHint="@color/red"
+                android:textSize="16sp"
+                app:textInputLayoutFocusedRectEnabled="true" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilPhone"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            app:boxBackgroundMode="outline"
+            app:counterEnabled="true"
+            app:counterMaxLength="50"
+            app:endIconMode="clear_text"
+            app:helperText="@string/helper_text"
+            app:helperTextEnabled="true"
+            app:prefixText="+84"
+            app:helperTextTextColor="@color/red"
+            app:layout_constraintTop_toBottomOf="@id/tilID"
+            app:passwordToggleTint="@color/white"
+            tools:ignore="MissingConstraints">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tiePhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hapticFeedbackEnabled="true"
+                android:hint="Nhap Phone"
+                android:textColor="@color/primary"
+                android:textColorHint="@color/red"
+                android:textSize="16sp"
+                app:textInputLayoutFocusedRectEnabled="true" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_30sdp"
+            android:layout_marginEnd="@dimen/_30sdp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="@id/tilFullName"
+            app:layout_constraintStart_toStartOf="@id/tilFullName"
+            app:layout_constraintTop_toBottomOf="@id/tilPhone"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:id="@+id/tvTitleICID"
+                android:text="ICID"
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:layout_weight="1"
+                android:textColor="@color/primary"
+                android:textColorHint="@color/red"
+                android:textSize="@dimen/_26sdp"
+                app:textInputLayoutFocusedRectEnabled="true"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/tvICID"
+                android:gravity="center_horizontal"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:textColor="@color/primary"
+                android:textColorHint="@color/red"
+                android:textSize="@dimen/_26sdp"
+                app:textInputLayoutFocusedRectEnabled="true"
+                tools:ignore="MissingConstraints" />
+        </LinearLayout>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/acbDate"
+            android:drawableTint="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:layout_marginBottom="@dimen/_16sdp"
+            android:background="@drawable/custom_acb_date"
+            android:textColor="@color/white"
+            android:drawableStart="@drawable/calendar"
+            android:gravity="center"
+            app:layout_constraintStart_toStartOf="@id/linear"
+            app:layout_constraintTop_toBottomOf="@id/linear"
+            app:layout_constraintEnd_toEndOf="@id/linear"
+            tools:ignore="MissingConstraints" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lavUpdate"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginBottom="?attr/actionBarSize"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:lottie_rawRes="@raw/edit"
+            android:layout_marginEnd="@dimen/_16sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:ignore="MissingConstraints" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

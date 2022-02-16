@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "838134785780",
+    "project_id": "asmapp-eb82b",
+    "storage_bucket": "asmapp-eb82b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:838134785780:android:51481e8b9ee473a817e0a1",
+        "android_client_info": {
+          "package_name": "com.example.asm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "838134785780-9ntcb3i108t3pmd5s8eb2898ks84edrj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.asm",
+            "certificate_hash": "2e97f4dd0712ae35b1a988477dba2e94d48812b8"
+          }
+        },
+        {
+          "client_id": "838134785780-fkcvr6gqjase2d1ii8iaumvb7ta589mm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCkq9CxATQPeYVm4FA8bKTBMokd4AFIDzM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "838134785780-fkcvr6gqjase2d1ii8iaumvb7ta589mm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

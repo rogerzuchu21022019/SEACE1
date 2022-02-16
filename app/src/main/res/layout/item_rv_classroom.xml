@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <variable
+            name="classRoom"
+            type="com.example.asm.database.entities.ClassRoom" />
+
+
+    </data>
+
+    <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="10dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="20dp"
+                android:layout_height="@dimen/_80sdp"
+                android:background="#000000" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:id="@+id/tvSTT1"
+                        android:layout_width="wrap_content"
+                        android:text="STT"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:layout_toEndOf="@+id/view"
+                        android:textColor="@color/red"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvClassID1"
+                        android:text="CLASS ID"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvSTT"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:layout_alignStart="@+id/tvSTT"
+                        android:layout_marginEnd="10dp"
+                        android:drawablePadding="5dp"
+                        android:textColor="@color/red"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        app:drawableTint="#000000" />
+
+                    <TextView
+                        android:id="@+id/tvClassName1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvClassID"
+                        android:text="CLASS NAME"
+                        android:layout_marginStart="10dp"
+                        android:layout_alignStart="@+id/tvClassID"
+                        android:layout_marginEnd="10dp"
+                        android:drawablePadding="5dp"
+                        android:textColor="@color/red"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        app:drawableTint="#000000" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_weight="9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:id="@+id/tvSTT"
+                        android:layout_width="wrap_content"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:text="@{String.valueOf(classRoom.iCID)}"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:layout_toEndOf="@+id/view"
+                        android:textColor="@color/red"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvClassID"
+                        android:text="@{classRoom.classID,default=CP17201}"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:layout_below="@+id/tvSTT"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_alignStart="@+id/tvSTT"
+                        android:layout_marginEnd="10dp"
+                        android:drawablePadding="5dp"
+                        android:textColor="@color/red"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        app:drawableTint="#000000" />
+
+                    <TextView
+                        android:id="@+id/tvClassName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvClassID"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:text="@{classRoom.className,default=`LAP TRINH MOBILE`}"
+                        android:layout_alignStart="@+id/tvClassID"
+                        android:layout_marginEnd="10dp"
+                        android:drawablePadding="5dp"
+                        android:textColor="@color/red"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        app:drawableTint="#000000" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</layout>

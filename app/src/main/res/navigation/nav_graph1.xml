@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph1"
+    app:startDestination="@id/managementFM">
+
+    <fragment
+        android:id="@+id/managementFM"
+        android:name="com.example.asm.fragment.ManagementFM"
+        android:label="ManagementFM"
+        tools:layout="@layout/fragment_management">
+        <action
+            android:id="@+id/action_managementFM_to_classroomManagerFM"
+            app:destination="@id/classroomManagerFM"
+            app:enterAnim="@anim/up_to_down"
+            app:exitAnim="@anim/left_to_right"
+            app:popEnterAnim="@anim/down_to_up"
+            app:popExitAnim="@anim/down_to_up" />
+        <action
+            android:id="@+id/action_managementFM_to_studentManagerFM"
+            app:destination="@id/studentManagerFM"
+            app:enterAnim="@anim/down_to_up"
+            app:exitAnim="@anim/left_to_right"
+            app:popEnterAnim="@anim/down_to_up"
+            app:popExitAnim="@anim/down_to_up" />
+    </fragment>
+    <fragment
+        android:id="@+id/classroomManagerFM"
+        android:name="com.example.asm.fragment.fmCRUD.ClassroomManagerFM"
+        android:label="ClassroomManagerFM"
+        tools:layout="@layout/fragment_manager_classroom" />
+
+    <fragment
+        android:id="@+id/studentManagerFM"
+        android:name="com.example.asm.fragment.fmCRUD.StudentManagerFM"
+        android:label="StudentManagerFM"
+        tools:layout="@layout/fragment_manager_student">
+        <action
+            android:id="@+id/action_studentManagerFM_to_insertFM"
+            app:destination="@id/insertFM"
+            app:enterAnim="@anim/left_to_right" />
+        <action
+            android:id="@+id/action_studentManagerFM_to_updateFM"
+            app:destination="@id/updateFM"
+            app:enterAnim="@anim/right_to_left" />
+        <argument
+            android:name="students"
+            app:argType="com.example.asm.database.entities.Students" />
+    </fragment>
+    <fragment
+        android:id="@+id/insertFM"
+        android:name="com.example.asm.fragment.fmCRUD.InsertFM"
+        android:label="InsertFM"
+        tools:layout="@layout/fragment_insert">
+        <argument
+            android:name="student"
+            app:argType="com.example.asm.database.entities.Students" />
+        <argument
+            android:name="string1"
+            android:defaultValue="@null"
+            app:argType="java.util.ArrayList"
+            app:nullable="true" />
+        <action
+            android:id="@+id/action_insertFM_to_studentManagerFM"
+            app:destination="@id/studentManagerFM"
+            app:enterAnim="@anim/left_to_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/updateFM"
+        android:name="com.example.asm.fragment.fmCRUD.UpdateFM"
+        android:label="UpdateFM"
+        tools:layout="@layout/fragment_update">
+        <argument
+            android:name="students"
+            app:argType="com.example.asm.database.entities.Students" />
+        <action
+            android:id="@+id/action_updateFM_to_studentManagerFM"
+            app:destination="@id/studentManagerFM"
+            app:enterAnim="@anim/left_to_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/drawerInstruction"
+        android:name="com.example.asm.fragment.InstructionFM"
+        android:label="Instruction"
+        tools:layout="@layout/fragment_instruction" />
+    <fragment
+        android:id="@+id/drawerProFile"
+        android:name="com.example.asm.fragment.ProfileFM"
+        android:label="ProfileFragment"
+        tools:layout="@layout/fragment_profile" />
+    <dialog
+        android:id="@+id/drawerLogout"
+        android:name="com.example.asm.fragment.fmLogin.BottomSheetFM"
+        android:label="BottomSheetFM"
+        tools:layout="@layout/fragment_bottom_sheet">
+
+
+        <action
+            android:id="@+id/action_drawerLogout_to_managementFM"
+            app:destination="@id/managementFM" />
+    </dialog>
+
+
+</navigation>

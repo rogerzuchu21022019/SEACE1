@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="false"
+    tools:context=".activities.DrawerLayoutActivity">
+
+        tools:ignore="Deprecated,MissingConstraints,TextViewEdits" />
+    <ImageView
+        android:id="@+id/imgInstruction"
+        android:layout_marginBottom="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:background="@drawable/instruction"
+        android:layout_height="match_parent"/>
+    <ImageView
+        android:id="@+id/imgWhite"
+        app:layout_constraintTop_toTopOf="@+id/imgInstruction"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@color/white"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        tools:ignore="MissingConstraints" />
+</androidx.constraintlayout.widget.ConstraintLayout>

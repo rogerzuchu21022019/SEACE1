@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <item
+        android:id="@+id/managementFM"
+        android:icon="@drawable/management"
+        android:title="Management" />
+    <item
+        android:id="@+id/classroomManagerFM"
+        android:icon="@drawable/classroom"
+        android:title="ClassRoom" />
+    <item
+        android:id="@+id/studentManagerFM"
+        android:icon="@drawable/student"
+        android:title="Student" />
+    <item
+        android:id="@+id/drawerProFile"
+        android:icon="@drawable/profile"
+        android:title="Profile" />
+
+
+</menu>
